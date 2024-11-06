@@ -1,0 +1,36 @@
+div {
+    min-height: 50px;
+}
+
+#container {
+
+}
+  
+#cyanDiv {
+    background-color: cyan;
+}
+
+#redDiv {
+    background-color: red;
+}
+
+#purpleDiv {
+    background-color: purple;
+}
+
+#greenDiv {
+    background-color: green;
+}
+
+#blueDiv {
+    background-color: blue;
+}
+
+#orangeDiv {
+    background-color: orange;
+}
+
+#blackDiv {
+    background-color: black;
+}
+  
