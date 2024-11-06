@@ -3,34 +3,63 @@ div {
 }
 
 #container {
-
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+    margin: 20px;
+    height: 850px;
 }
-  
+
 #cyanDiv {
+    grid-column: 1/5;
+    grid-row: 1;
     background-color: cyan;
+    place-items: center;
+    margin: 20px;
+    
 }
 
 #redDiv {
+    grid-row: 2/4;
     background-color: red;
+    margin: 20px;
 }
 
 #purpleDiv {
+    grid-row: 2/4;
+    grid-column: 2/4;
     background-color: purple;
+    margin: 20px 0px 20px 0px;
+    margin: 20px;
 }
 
 #greenDiv {
+    grid-row: 2;
     background-color: green;
+    margin: 20px 0px 20px 0px;
+    margin: 20px;
 }
 
 #blueDiv {
+    grid-row: 3;
     background-color: blue;
+    margin: 20px 0px 20px 0px;
+    margin: 20px;
 }
 
 #orangeDiv {
+    grid-row: 4;
+    grid-column: 2/5;
     background-color: orange;
+    margin: 20px 0px 20px 0px;
+    margin: 20px;
 }
 
 #blackDiv {
+    grid-row: 4;
+    grid-column: 1;
     background-color: black;
+    margin: 20px 0px 20px 0px;
+    margin: 20px;
 }
   

@@ -3,34 +3,77 @@ div {
 }
 
 #container {
-
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: repeat(4,1fr);
+     
 }
   
 #cyanDiv {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
     background-color: cyan;
+    margin: 20px;
 }
 
 #redDiv {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
     background-color: red;
+    margin: 20px;
 }
 
 #purpleDiv {
+    
     background-color: purple;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin: 20px;
 }
 
 #greenDiv {
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
     background-color: green;
+    margin: 20px;
 }
 
 #blueDiv {
+
     background-color: blue;
+    margin: 20px;
 }
 
 #orangeDiv {
+
     background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 20px;
 }
 
 #blackDiv {
     background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 20px;
 }
   

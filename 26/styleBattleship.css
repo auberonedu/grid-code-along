@@ -3,11 +3,21 @@ div {
 }
 
 #container {
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: 14.25% 14.25% 57% 14.25%; */
 }
   
 #cyanDiv {
     background-color: cyan;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    /* grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; */
 }
 
 #redDiv {
@@ -20,6 +30,8 @@ div {
 
 #greenDiv {
     background-color: green;
+
+
 }
 
 #blueDiv {
@@ -32,5 +44,10 @@ div {
 
 #blackDiv {
     background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
   

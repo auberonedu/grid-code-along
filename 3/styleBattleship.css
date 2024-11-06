@@ -1,36 +1,56 @@
 div {
     min-height: 50px;
 }
-
-#container {
-
-}
-  
 #cyanDiv {
+    grid-area: cyan;
     background-color: cyan;
 }
 
 #redDiv {
     background-color: red;
+    grid-area:red;
 }
 
 #purpleDiv {
     background-color: purple;
+    grid-area:purple;
 }
 
 #greenDiv {
-    background-color: green;
+    background-color: #8CE029 ;
+    grid-area:green;
 }
 
 #blueDiv {
     background-color: blue;
+    grid-area:blue;
 }
 
 #orangeDiv {
     background-color: orange;
+    grid-area: orange;
 }
 
 #blackDiv {
     background-color: black;
+    grid-area: black;
 }
   
+#container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 50%); 
+    gap:20px;
+      grid-template-areas: 
+    'cyan cyan cyan cyan'
+    'red purple purple green'
+    'red purple purple blue'
+    'black orange orange orange' ;
+}
+
+#container > div  {
+    border-color: black;
+    border-style:solid;
+    border-width:1px;
+
+}

@@ -3,23 +3,30 @@ div {
 }
 
 #container {
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 12.25% 12.25% 57% 12.25%; */
 }
   
 #cyanDiv {
     background-color: cyan;
+    grid-area: 1/1/2/5;
 }
 
 #redDiv {
     background-color: red;
+    grid-area: 2/1/4/2;
 }
 
 #purpleDiv {
     background-color: purple;
+    grid-area: 2/2/4/4;
 }
 
 #greenDiv {
     background-color: green;
+    grid-area: 2/4/3/5;
 }
 
 #blueDiv {
@@ -28,9 +35,11 @@ div {
 
 #orangeDiv {
     background-color: orange;
+    grid-area: 4/2/4/5;
 }
 
 #blackDiv {
     background-color: black;
+    grid-area: 4/1/5/2;
 }
   
