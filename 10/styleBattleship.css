@@ -6,6 +6,8 @@ div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    /* gap: 1%; - gap wont be even between boxes as it changes in regards to height and width */
+    gap: 10px; 
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     /* grid-template-columns: 14.25% 14.25% 57% 14.25%; */
 
@@ -13,7 +15,8 @@ div {
   
 #cyanDiv {
     background-color: cyan;
-    grid-column: 1 / 5;
+    /* grid-column: 1 / 5; */
+    grid-column: 1 / -1;
     grid-row: 1 / 2; 
     /* grid-column-start: 1;
     grid-column-end: 5;
@@ -39,7 +42,7 @@ div {
 
 #greenDiv {
     background-color: green;
-    grid-column: 4 / 5;
+    grid-column: -2 / -1;
     grid-row: 2 / 3; 
     /* grid-column-start: 4;
     grid-column-end: 5;
@@ -49,13 +52,14 @@ div {
 
 #blueDiv {
     background-color: blue;
-    grid-column: 4 / 5;
+    grid-column: -2 / -1;
     grid-row: 3 / 4;
+    /* -2 / -1 ensures theyre always in that last column */
 }
 
 #orangeDiv {
     background-color: orange;
-    grid-column: 2 / 5;
+    grid-column: 2 / -1; /* can mix positive and negative numbers. -1 is always going to be the end of the column*/
     grid-row: 4 / 5;
 }
 
@@ -69,3 +73,22 @@ div {
     grid-row-end: 5; */
 }
   
+
+@media screen and (max-width: 500px) {
+    /* #purpleDiv {
+        border: 5px black solid;
+    } */
+
+    #redDiv {
+        display: none;
+    }
+
+    #blackDiv{
+        display: none;
+    }
+
+    #container {
+        display: flex; 
+        flex-direction: column;
+    }
+}

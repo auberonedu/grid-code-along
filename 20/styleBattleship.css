@@ -6,6 +6,7 @@ div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
     /* grid-template-columns: 14.25%, 14.25%, 57%, 14.25%;*/
 } 
   
@@ -28,6 +29,8 @@ div {
 
 #purpleDiv {
     background-color: purple;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
 }
 
 #greenDiv {
@@ -41,10 +44,12 @@ div {
 
 #blueDiv {
     background-color: blue;
+    grid-column: 4 / 5
 }
 
 #orangeDiv {
     background-color: orange;
+    grid-column: 2 / 5;
 }
 
 #blackDiv {
@@ -55,4 +60,18 @@ div {
     grid-row-start: 4;
     grid-row-end: 5;
 }
-  
+
+
+@media screen and (max-width: 500px) {
+    #redDiv {
+        display: none;
+    }
+
+    #blackDiv {
+        display: none;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,36 +1,89 @@
-div {
-    min-height: 50px;
+body {
+    margin: 1%;
 }
 
 #container {
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 3%;
+    row-gap: 5%;
+    height: 100vh;
+    grid-template-areas: 
+    'cyan cyan cyan cyan'
+    'red purple purple green'
+    'red purple purple blue'
+    'black orange orange orange';
 }
   
 #cyanDiv {
     background-color: cyan;
+    grid-area: cyan;
+    border: 2px black solid;
 }
 
 #redDiv {
     background-color: red;
+    grid-area: red;
+    border: 2px black solid;
 }
 
 #purpleDiv {
     background-color: purple;
+    grid-area: purple;
+    border: 2px black solid;
 }
 
 #greenDiv {
     background-color: green;
+    grid-area: green;
+    border: 2px black solid;
 }
 
 #blueDiv {
     background-color: blue;
+    grid-area: blue;
+    border: 2px black solid;
 }
 
 #orangeDiv {
     background-color: orange;
+    grid-area: orange;
+    border: 2px black solid;
 }
 
 #blackDiv {
     background-color: black;
+    grid-area: black;
+    border: 2px black solid;
 }
-  
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 1%;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 3%;
+        height: 100vh;
+        grid-template-areas: 
+        'cyan'
+        'purple'
+        'purple'
+        'green'
+        'blue'
+        'orange';
+    }
+    
+    #blackDiv {
+        display: none;
+    }
+
+    #redDiv {
+        display: none;
+    }
+
+}

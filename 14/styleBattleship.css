@@ -6,7 +6,7 @@ div {
      display: grid;
      grid-template-columns: repeat(4,1fr);
      grid-template-rows: repeat(4,1fr);
-     
+     gap: 10px;
 }
   
 #cyanDiv {
@@ -16,7 +16,7 @@ div {
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: cyan;
-    margin: 20px;
+
 }
 
 #redDiv {
@@ -26,7 +26,7 @@ div {
     grid-row-start: 2;
     grid-row-end: 4;
     background-color: red;
-    margin: 20px;
+
 }
 
 #purpleDiv {
@@ -37,7 +37,6 @@ div {
 
     grid-row-start: 2;
     grid-row-end: 4;
-    margin: 20px;
 }
 
 #greenDiv {
@@ -47,13 +46,11 @@ div {
     grid-row-start: 2;
     grid-row-end: 3;
     background-color: green;
-    margin: 20px;
 }
 
 #blueDiv {
 
     background-color: blue;
-    margin: 20px;
 }
 
 #orangeDiv {
@@ -64,7 +61,6 @@ div {
 
     grid-row-start: 4;
     grid-row-end: 5;
-    margin: 20px;
 }
 
 #blackDiv {
@@ -74,6 +70,21 @@ div {
 
     grid-row-start: 4;
     grid-row-end: 5;
-    margin: 20px;
 }
-  
+@media screen and (max-width: 500px)
+{
+    #redDiv
+    {
+        display: none;
+    }
+    #blackDiv
+    {
+        display: none;
+    }
+    #container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+      

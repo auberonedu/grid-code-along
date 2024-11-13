@@ -3,34 +3,49 @@ div {
 }
 
 #container {
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "c  c  c  c"
+    "r  p  p  g"
+    "r  p  p  bu"
+    "ba o  o  o";
+    gap: 10px;
 }
   
 #cyanDiv {
     background-color: cyan;
+    grid-area: c;
 }
 
 #redDiv {
     background-color: red;
+    grid-area: r;
 }
 
 #purpleDiv {
     background-color: purple;
+    grid-area: p;
 }
 
 #greenDiv {
     background-color: green;
+    grid-area: g;
 }
 
 #blueDiv {
     background-color: blue;
+    grid-area: bu;
 }
 
 #orangeDiv {
     background-color: orange;
+    grid-area: o;
 }
 
 #blackDiv {
     background-color: black;
+    grid-area: ba;
 }
   

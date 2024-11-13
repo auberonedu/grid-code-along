@@ -3,34 +3,64 @@ div {
 }
 
 #container {
-
+    margin: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "cyan cyan cyan cyan"
+    "red purple purple green"
+    "red purple purple blue"
+    "black orange orange orange";
+    gap: 24px;
 }
   
 #cyanDiv {
     background-color: cyan;
+    grid-area: cyan;
 }
 
 #redDiv {
     background-color: red;
+    grid-area: red;
 }
 
 #purpleDiv {
     background-color: purple;
+    grid-area: purple;
 }
 
 #greenDiv {
     background-color: green;
+    grid-area: green;
 }
 
 #blueDiv {
     background-color: blue;
+    grid-area: blue;
 }
 
 #orangeDiv {
     background-color: orange;
+    grid-area: orange;
 }
 
 #blackDiv {
     background-color: black;
+    grid-area: black;
 }
   
+@media screen and (max-width: 500px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #redDiv  {
+        display: none;
+    }
+
+    #blackDiv {
+        display: none;
+    }
+}

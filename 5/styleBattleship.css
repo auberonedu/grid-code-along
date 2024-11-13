@@ -6,48 +6,72 @@ div {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(4, 1fr);
-
+gap: 20px;
 }
   
 #cyanDiv {
     background-color: cyan;
     grid-column: 1 / 5;
     grid-row: 1 / 2;
+    border: 1px solid black;
 }
 
 #redDiv {
     background-color: red;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
+    border: 1px solid black;
 }
 
 #purpleDiv {
     background-color: purple;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+    border: 1px solid black;
 }
 
 #greenDiv {
     background-color: green;
     grid-column: 4 / 5;
     grid-row: 2 / 3;
+    border: 1px solid black;
 }
 
 #blueDiv {
     background-color: blue;
     grid-column: 4 / 5;
     grid-row: 3 / 4;
+    border: 1px solid black;
 }
 
 #orangeDiv {
     background-color: orange;
     grid-column: 2 / 5;
     grid-row: 4 / 5;
+    border: 1px solid black;
 }
 
 #blackDiv {
     background-color: black;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 500px) {
+    #redDiv {
+        display: none;
+    }
+
+    #blackDiv {
+        display: none;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
 }
   
