@@ -1,0 +1,83 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "purple purple orange    orange    orange    orange    orange    red       red"
+    "purple purple orange    orange    orange    orange    orange    red       red"
+    "purple purple orange    orange    orange    orange    orange    red       red"
+    "purple purple limegreen limegreen blue      black     black     red       red"
+    "purple purple yellow    yellow    yellow    yellow    yellow    red       red"
+    "purple purple darkgreen darkgreen darkgreen darkgreen darkgreen darkgreen darkgreen"
+    "purple purple darkgreen darkgreen darkgreen darkgreen darkgreen darkgreen darkgreen";
+    gap: 12px;
+    height: 90vh;
+}
+
+#penguins {
+    width: auto;
+    height: 100%;
+}
+#ocean {
+    object-fit: cover;
+    width: 100%;
+}
+
+#purpleDiv p {
+    font-size: large;
+    padding: 20px 50px;
+    color: whitesmoke;
+}
+
+#redDiv {
+    background-color: red;
+    grid-area: red;
+}
+
+.sunset {
+    object-fit: cover;
+    object-position: 0 100%;
+    height: 100%;
+    width: 100%;
+}
+
+#orangeDiv {
+    background-color: orange;
+    grid-area:orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#yellowDiv {
+    background-color: yellow;
+    grid-area:yellow;
+}
+#darkGreenDiv {
+    background-color: darkgreen;
+    grid-area: darkgreen;
+    display: flex;
+    justify-content: right;
+}
+#limeGreenDiv {
+    background-color: limegreen;
+    grid-area: limegreen;
+}
+#blackDiv{
+    background-color:black ;
+    color: white;
+    grid-area: black;
+}
+#blueDiv{
+    background-color: blue;
+    grid-area: blue;
+    display: flex;
+    justify-content: center;
+}
+#purpleDiv{
+    background-color: purple;
+    grid-area: purple;
+}
+
+.container div {
+    border: 5px sol black;
+}

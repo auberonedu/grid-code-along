@@ -57,18 +57,29 @@ div {
  grid-row-start: 4;
  grid-row-end: 5;
 }
-  
-
-@media screen and (max-width: 500px) {
+  @media screen and (max-width:500px) {
     #redDiv {
-        display:none;
+        display: none;
     }
 
     #blackDiv {
         display: none;
+
     }
-    #container {
-        display:flex;
+
+    #container div {
+        height:20vh;
+    }
+
+    #container #purpleDiv {
+        height: 40vh;
+    }
+
+    #container{
+        display: flex;
         flex-direction: column;
     }
 }
+    
+  
+   

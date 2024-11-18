@@ -9,7 +9,6 @@ div {
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4,1fr);
 
-    /* grid-template-columns: 14.25% 14.25% 57% 14.25%; */
 }
   
 #cyanDiv {
@@ -62,6 +61,13 @@ div {
     }
     #blackDiv {
         display: none;
+    }
+
+    #container div {
+        height: 20vh;
+    }
+    #container #purpleDiv {
+        height: 40vh;
     }
     #container {
         display: flex;

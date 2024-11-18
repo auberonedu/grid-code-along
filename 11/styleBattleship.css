@@ -6,6 +6,8 @@ div {
     display:grid;
     grid-template-columns: repeat(4fr, 1fr);
     grid-template-rows: repeat(4fr,1fr);
+    gap:10px;
+    height:50vh;
 
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     /* grid-template-columns: 14.25% 14.25% 57% 14.25%; */
@@ -61,4 +63,26 @@ div {
     grid-row-start: 4;
     grid-row-end: 5;
 }
-  
+  @media screen and (max-width:500px){
+    #redDiv {
+        display:none;
+
+    }
+    #blackDiv{
+        display:flex;
+        flex-direction: column;
+    }
+    /*#container div{
+        height: 30vh;
+    }
+
+    #container #purpleDiv{
+        height:40vh;
+
+    }*/
+
+    #container{
+        display:flex;
+        flex-direction: column;
+    }
+  }

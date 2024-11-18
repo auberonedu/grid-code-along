@@ -8,7 +8,7 @@ body {
     grid-template-rows: repeat(4, 1fr);
     column-gap: 3%;
     row-gap: 5%;
-    height: 100vh;
+    height: 95vh;
     grid-template-areas: 
     'cyan cyan cyan cyan'
     'red purple purple green'
@@ -58,6 +58,11 @@ body {
     border: 2px black solid;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 800px) {
     body {
         margin: 1%;
@@ -68,7 +73,7 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
         row-gap: 3%;
-        height: 100vh;
+        height: 95vh;
         grid-template-areas: 
         'cyan'
         'purple'
@@ -84,5 +89,13 @@ body {
 
     #redDiv {
         display: none;
+    }
+
+    #greenDiv img {
+        object-fit: fill;
+    }
+
+    #greenDiv {
+        overflow: hidden;
     }
 }

@@ -73,5 +73,15 @@ div {
         display: flex;
         flex-direction: column;
     }
+
+    #container div {
+        height: 20hv;
+    }
+
+    #container #purpleDiv {
+        height: 40hv;
+    }
+
+    
 }
   

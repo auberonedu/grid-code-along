@@ -1,0 +1,68 @@
+body {
+    margin: 1%;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 95vh;
+    grid-template-areas: 
+    'purple orange orange orange orange orange red'
+    'purple orange orange orange orange orange red'
+    'purple orange orange orange orange orange red'
+    'purple lightgreen lightgreen blue black black red'
+    'purple yellow yellow yellow yellow yellow red'
+    'purple darkgreen darkgreen darkgreen darkgreen darkgreen darkgreen'
+    'purple darkgreen darkgreen darkgreen darkgreen darkgreen darkgreen'
+}
+
+#purpleDiv {
+    background-color: purple;
+    grid-area: purple;
+    border: 2px black solid;
+}
+
+#orangeDiv {
+    background-color: orange;
+    grid-area: orange;
+    border: 2px black solid;
+}
+
+#redDiv {
+    background-color: red;
+    grid-area: red;
+    border: 2px black solid;
+}
+
+#blueDiv {
+    background-color: blue;
+    grid-area: blue;
+    border: 2px black solid;
+}
+
+#blackDiv {
+    background-color: black;
+    grid-area: black;
+    border: 2px black solid;
+}
+
+#lightgreenDiv {
+    background-color: lightgreen;
+    grid-area: lightgreen;
+    border: 2px black solid;
+}
+
+#yellowDiv {
+    background-color: yellow;
+    grid-area: yellow;
+    border: 2px black solid;
+}
+
+#darkgreenDiv {
+    background-color: darkgreen;
+    grid-area: darkgreen;
+    border: 2px black solid;
+}

@@ -1,0 +1,54 @@
+div {
+    min-height: 50px;
+    min-width: 50px;
+}
+
+#container { 
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 5px;
+    grid-template-areas: 
+        'p   o  o  o   o    o     r'
+        'p   o  o  o   o    o     r'
+        'p   o  o  o   o    o     r'
+        'p   g  g  blu blac blac  r'
+        'p   yl yl yl  yl   yl    r'
+        'p   g  g  g   g    g     g'
+        'p   g  g  g   g    g     g';
+}
+
+#yellowDiv {
+    background-color: yellow;
+    grid-area: yl;
+    
+}
+#redDiv {
+    background-color: red;
+    grid-area: r;
+}
+
+#purpleDiv {
+    background-color: purple;
+    grid-area: p;
+}
+
+#greenDiv {
+    background-color: green;
+    grid-area: g;
+}
+
+#blueDiv {
+    background-color: blue;
+    grid-area: blu;
+}
+
+#blackDiv {
+    background-color: black;
+    grid-area: blac;
+}
+
+#orangeDiv {
+    background-color: orange;
+    grid-area: o;
+}
